@@ -1,0 +1,51 @@
+.app__home {
+  display: flex;
+  padding: 8rem;
+  min-height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+
+  .app__hero-name {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 8rem;
+
+    @media screen and (max-width: 900px) {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+  .app__hero-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .app__hero-desc {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 900px) {
+      font-size: 0.8rem;
+    }
+  }
+  .download__link {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 2rem;
+  }
+}
