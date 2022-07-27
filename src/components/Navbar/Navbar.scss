@@ -20,8 +20,12 @@
     svg {
       width: 35px;
       height: 35px;
-      color: var(--primary-color);
       cursor: pointer;
+    }
+    .app__navbar-expanded {
+      svg {
+        color: var(--primary-color);
+      }
     }
     div {
       position: fixed;
@@ -29,7 +33,7 @@
       bottom: 0;
       right: 0;
       z-index: 5;
-
+      background-color: var(--white-color);
       padding: 1rem 4rem;
 
       width: 100vw;
@@ -48,6 +52,7 @@
           text-decoration: none;
           font-size: 4rem;
           font-weight: 700;
+          text-transform: capitalize;
           color: var(--secondary-color);
 
           &:hover {
@@ -69,5 +74,22 @@
 
   @media screen and (max-width: 900px) {
     padding: 1rem 2rem;
+  }
+}
+
+.light {
+  background-color: var(--white-color);
+}
+
+.dark {
+  background-color: var(--bg-color);
+  .app__navbar-logo {
+    color: var(--white-color);
+  }
+
+  .app__navbar-menu {
+    svg {
+      color: var(--white-color);
+    }
   }
 }
