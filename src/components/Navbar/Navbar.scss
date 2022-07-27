@@ -1,0 +1,73 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 1rem 4rem;
+
+  position: fixed;
+  z-index: 2;
+
+  .app__navbar-logo {
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .app__navbar-menu {
+    svg {
+      width: 35px;
+      height: 35px;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+    div {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
+
+      padding: 1rem 4rem;
+
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      ul {
+        margin-top: 3rem;
+        list-style: none;
+
+        text-align: right;
+        a {
+          text-decoration: none;
+          font-size: 4rem;
+          font-weight: 700;
+          color: var(--secondary-color);
+
+          &:hover {
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+          }
+
+          @media screen and (max-width: 900px) {
+            font-size: 3rem;
+          }
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 2rem;
+  }
+}
