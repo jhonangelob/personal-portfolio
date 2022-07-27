@@ -5,7 +5,7 @@ import AppWrap from "../../wrapper/AppWrap";
 const About = () => {
   return (
     <>
-      <div className="app__flex app__about">
+      <div className="app__about">
         <h1>
           I specialize in <span>Web Development</span> and <span>UI/UX</span>{" "}
           Design.
