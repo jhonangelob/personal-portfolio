@@ -1,0 +1,68 @@
+.app__experience {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  padding: 8rem;
+  justify-content: center;
+  color: var(--secondary-color);
+  flex: 1;
+
+  .cont {
+    width: calc(100% - 30%);
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+
+      @media screen and (max-width: 900px) {
+        font-size: 2rem;
+      }
+    }
+
+    .tech-btn,
+    .exp-btn {
+      color: var(--gray-color);
+      cursor: pointer;
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--black-color);
+        transition: all 0.1s;
+      }
+    }
+
+    span {
+      color: var(--white-color);
+    }
+
+    p {
+      margin: 0.5rem 0rem;
+      font-weight: 500;
+    }
+
+    .tech_cont {
+      width: calc(100% - 30%);
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        font-size: 0.8rem;
+      }
+    }
+
+    .exp-cont {
+      width: calc(100% - 30%);
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        font-size: 0.8rem;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 1rem;
+  }
+}
