@@ -6,7 +6,7 @@ import AppWrap from "../../wrapper/AppWrap";
 const Projects = () => {
   return (
     <>
-      <div className="app__projects">
+      <div>
         <h1>Projects</h1>
         <ul>
           <li>Home Aide</li>
