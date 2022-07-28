@@ -6,7 +6,11 @@ import AppWrap from "../../wrapper/AppWrap";
 const Projects = () => {
   return (
     <>
-      <div>
+      <motion.div
+        exit={{ opacity: 0 }}
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <h1>Projects</h1>
         <ul>
           <li>Home Aide</li>
@@ -15,7 +19,11 @@ const Projects = () => {
           <li>Movie App</li>
           <li>Portfolio V2</li>
         </ul>
-        <motion.div className="app__projects-details">
+        <motion.div
+          className="app__projects-details"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: [0, 1] }}
+        >
           <p className="app__project-desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante
             dui, consectetur.
@@ -36,7 +44,7 @@ const Projects = () => {
             </a>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </>
   );
 };
