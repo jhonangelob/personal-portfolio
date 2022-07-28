@@ -1,15 +1,33 @@
 import React from "react";
 import "./About.scss";
 import AppWrap from "../../wrapper/AppWrap";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <>
-      <div className="app__about">
-        <h1>
-          I specialize in <span>Web Development</span> and <span>UI/UX</span>{" "}
+      <div>
+        <motion.h1
+          className="about__text"
+          whileInView={{ opacity: [1, 1] }}
+          transition={{ delay: 0.3 }}
+        >
+          I specialize in{" "}
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: [0, 1] }}
+          >
+            Web Development
+          </motion.span>{" "}
+          and{" "}
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: [0, 1] }}
+          >
+            UI/UX
+          </motion.span>{" "}
           Design.
-        </h1>
+        </motion.h1>
       </div>
     </>
   );
