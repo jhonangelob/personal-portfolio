@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.scss";
 import AppWrap from "../../wrapper/AppWrap";
 import { motion } from "framer-motion";
+import { getResume } from "../../configs/useContentful";
 
 const Home = () => {
+  const [file, setFile] = useState([]);
+  useEffect(() => {
+    getResume().then((response) => response && setFile(response));
+  }, []);
+
   return (
     <>
       <motion.div
@@ -18,14 +24,17 @@ const Home = () => {
           dui, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing
           elit. Donec ante dui, consectetur.
         </p>
-        <a
-          href="../../assets/file/BUSTARDE, Jhon Angelo .pdf"
-          target="_blank"
-          rel="noreferrer"
-          className="download__link"
-        >
-          <span>Download CV</span>
-        </a>
+        {file?.map((file) => (
+          <a
+            href={file.download.file.url}
+            target="_blank"
+            rel="noreferrer"
+            className="download__link"
+            key={`key-${file.index}`}
+          >
+            <span>Download CV</span>
+          </a>
+        ))}
       </motion.div>
     </>
   );
