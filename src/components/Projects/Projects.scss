@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  width: 100vw;
+
   padding: 4rem 8rem;
 
   h1 {
+    text-align: center;
     font-size: 8rem;
     font-weight: 800;
     color: var(--black-color);
@@ -19,7 +19,6 @@
   }
 
   ul {
-    width: 40vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -31,7 +30,7 @@
     li {
       color: var(--secondary-color);
       font-weight: 500;
-      margin: 0.5rem 0rem;
+      margin: 0.5rem 1rem;
       cursor: pointer;
     }
 
@@ -41,9 +40,8 @@
     }
   }
   .app__projects-details {
-    width: 40vw;
     font-weight: 500;
-
+    margin: 4rem 1rem 0rem 1rem;
     flex-direction: column;
 
     .app__project-desc {
