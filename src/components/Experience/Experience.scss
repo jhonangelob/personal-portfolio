@@ -52,6 +52,10 @@
     .exp-cont {
       width: calc(100% - 30%);
 
+      .exp-title {
+        color: var(--white-color);
+      }
+
       @media screen and (max-width: 900px) {
         width: 100%;
         font-size: 0.8rem;
