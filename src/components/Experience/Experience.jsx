@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AppWrap from "../../wrapper/AppWrap";
 import { motion } from "framer-motion";
 import "./Experience.scss";
@@ -54,8 +54,8 @@ const Experience = () => {
             className="exp-cont"
           >
             <p>2022</p>
-            <p>Web developer intern</p>
-            <p>Symph,Inc</p>
+            <p className="exp-title">Web Developer Intern</p>
+            <p>Symph, Inc.</p>
           </motion.div>
         )}
       </div>
