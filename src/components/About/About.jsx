@@ -12,7 +12,7 @@ const About = () => {
           whileInView={{ opacity: [1, 1] }}
           transition={{ delay: 0.3 }}
         >
-          I specialize in{" "}
+          I specializes in{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: [0, 1] }}
