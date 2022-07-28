@@ -1,0 +1,76 @@
+.app__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 4rem 8rem;
+
+  h1 {
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--black-color);
+    margin-bottom: 6rem;
+
+    @media screen and (max-width: 900px) {
+      font-size: 3rem;
+    }
+  }
+
+  ul {
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      color: var(--secondary-color);
+      font-weight: 500;
+      margin: 0.5rem 0rem;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 80vw;
+      font-size: 0.8rem;
+    }
+  }
+  .app__projects-details {
+    width: 40vw;
+    font-weight: 500;
+
+    flex-direction: column;
+
+    .app__project-desc {
+      margin: 2rem 0rem;
+    }
+    .app__project-tech {
+      margin: 2rem 0rem;
+    }
+
+    .controls {
+      display: flex;
+
+      a {
+        margin-right: 1rem;
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 80vw;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 3rem;
+  }
+}
