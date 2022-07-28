@@ -1,6 +1,5 @@
 import { createClient } from "contentful";
-const { REACT_APP_CONTENTFUL_CONFIG } = process.env;
-const contentfulConfig = JSON.parse(REACT_APP_CONTENTFUL_CONFIG);
+const contentfulConfig = JSON.parse(process.env.REACT_APP_CONTENTFUL_CONFIG);
 const client = createClient(contentfulConfig);
 
 export const getResume = async () => {
