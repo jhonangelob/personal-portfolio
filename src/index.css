@@ -13,6 +13,10 @@
   --gray-color: #c4c4c4;
 }
 
+:focus {
+  outline: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
