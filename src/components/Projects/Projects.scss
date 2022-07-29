@@ -17,58 +17,72 @@
     }
   }
 
-  ul {
+  .app__projects-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    list-style: none;
-    margin: 0rem 1rem;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    color: var(--secondary-color);
 
-    li {
-      color: var(--secondary-color);
-      font-weight: 500;
-      margin: 0.5rem 1rem;
-      cursor: pointer;
-    }
+    .app__projects-card {
+      width: calc(100% / 2 - 10%);
+      margin: 1rem;
+      border: solid 1px var(--gray-color);
+      border-radius: 8px;
+      padding: 1rem;
 
-    @media screen and (max-width: 900px) {
-      width: 80vw;
-      font-size: 0.8rem;
-    }
-  }
-  .app__projects-details {
-    font-weight: 500;
-    margin: 4rem 1rem 0rem 1rem;
-    flex-direction: column;
-
-    .app__project-desc {
-      margin: 2rem 0rem;
-    }
-    .app__project-tech {
-      margin: 2rem 0rem;
-    }
-
-    .controls {
-      display: flex;
-
-      a {
-        margin-right: 1rem;
-        color: var(--secondary-color);
-        text-decoration: none;
-        font-weight: 500;
+      .app__project-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
       }
-    }
 
-    @media screen and (max-width: 900px) {
-      width: 80vw;
-      font-size: 0.8rem;
+      .app__project-desc {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+
+      .app__project-tech {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        list-style: none;
+
+        li {
+          color: var(--secondary-color);
+          font-weight: 300;
+          margin-right: 0.5rem;
+          text-transform: uppercase;
+        }
+      }
+
+      .controls {
+        display: flex;
+
+        a {
+          font-size: 0.8rem;
+          margin-right: 1rem;
+          color: var(--black-color);
+          text-decoration: none;
+          font-weight: 500;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        margin: 1rem 0rem;
+      }
     }
   }
 
   @media screen and (max-width: 900px) {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 }
+
+// @media screen and (max-width: 900px) {
+//   width: 80vw;
+//   font-size: 0.8rem;
+// }
