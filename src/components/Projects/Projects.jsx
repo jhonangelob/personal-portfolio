@@ -19,7 +19,12 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className="app__projects-container">
           {projects?.map((project) => (
-            <div className="app__projects-card" key={`${project.name}-card`}>
+            <motion.div
+              whileInView={{ opacity: [0, 1], y: [40, 0] }}
+              transition={{ duration: 0.8 }}
+              className="app__projects-card"
+              key={`${project.name}-card`}
+            >
               <p className="app__project-title">{project.name}</p>
               <p className="app__project-desc">{project.description}</p>
               <ul className="app__project-tech">
@@ -36,7 +41,7 @@ const Projects = () => {
                   Source
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>
