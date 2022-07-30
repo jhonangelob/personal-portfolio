@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: var(--bg-color);
   padding: 8rem;
-  justify-content: center;
+
   color: var(--secondary-color);
   flex: 1;
 
@@ -12,7 +12,7 @@
 
     h1 {
       font-size: 4rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
 
       @media screen and (max-width: 900px) {
         font-size: 2rem;
@@ -68,5 +68,6 @@
 
   @media screen and (max-width: 900px) {
     padding: 1rem 2rem;
+    justify-content: center;
   }
 }
