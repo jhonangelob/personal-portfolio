@@ -16,7 +16,12 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <nav className={colorChange ? "app__navbar dark" : "app__navbar light"}>
+    <motion.nav
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ duration: 0.5 }}
+      className={colorChange ? "app__navbar dark" : "app__navbar light"}
+    >
       <div className="app__navbar-logo">jhn</div>
       <div className="app__navbar-menu">
         {!toggle ? (
@@ -41,7 +46,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
