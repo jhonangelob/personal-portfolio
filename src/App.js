@@ -1,5 +1,7 @@
+import React, { useState, useEffect } from "react";
 import "./App.scss";
 import {
+  Loader,
   About,
   Contact,
   Experience,
@@ -9,14 +11,31 @@ import {
 } from "./components";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
+
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
+      {loading ? (
+        <>
+          <Loader />
+        </>
+      ) : (
+        <>
+          <Navbar />
+          <Home />
+          <About />
+          <Projects />
+          <Experience />
+          <Contact />
+        </>
+      )}
     </div>
   );
 }
