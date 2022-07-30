@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import AppWrap from "../../wrapper/AppWrap";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
@@ -6,10 +6,11 @@ import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import "./Contact.scss";
 
 const Contact = () => {
+  const [sending, setSending] = useState(false);
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setSending(true);
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -20,6 +21,9 @@ const Contact = () => {
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
+          setTimeout(() => {
+            setSending(false);
+          }, 2000);
         },
         function (error) {
           console.log("FAILED...", error);
@@ -57,6 +61,7 @@ const Contact = () => {
               type="text"
               placeholder="Your Name"
               name="name"
+              required
             />
             <motion.input
               whileInView={{ opacity: [0, 1] }}
@@ -64,6 +69,7 @@ const Contact = () => {
               type="text"
               placeholder="Your Email"
               name="email"
+              required
             />
             <motion.textarea
               whileInView={{ opacity: [0, 1] }}
@@ -72,13 +78,18 @@ const Contact = () => {
               cols="30"
               rows="4"
               name="message"
+              required
             />
             <motion.button
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5, delay: 0.8 }}
               type="submit"
+              style={{
+                backgroundColor: sending ? "#fff" : "#000",
+                color: sending ? "#000" : "#fff",
+              }}
             >
-              SEND
+              {!sending ? "SEND" : "SENDING..."}
             </motion.button>
           </form>
         </div>
