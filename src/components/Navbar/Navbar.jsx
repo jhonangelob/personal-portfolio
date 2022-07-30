@@ -7,7 +7,12 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= window.innerHeight - 70) {
+    if (
+      (window.scrollY >= window.innerHeight - 70 &&
+        window.scrollY < window.innerHeight * 2 - 70) ||
+      (window.scrollY >= window.innerHeight * 3 - 70 &&
+        window.scrollY < window.innerHeight * 4 - 70)
+    ) {
       setColorchange(true);
     } else {
       setColorchange(false);
