@@ -13,9 +13,10 @@ const Home = () => {
   return (
     <>
       <motion.div
+        initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <h1 className="app__hero-name">Jhon Angelo</h1>
         <h3 className="app__hero-title">web developer</h3>
