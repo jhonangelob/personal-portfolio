@@ -21,9 +21,9 @@ const Home = () => {
         <h1 className="app__hero-name">Jhon Angelo</h1>
         <h3 className="app__hero-title">web developer</h3>
         <p className="app__hero-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante
-          dui, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Donec ante dui, consectetur.
+          My name is Jhon Angelo Bustarde, and I am a Bachelor of Science in
+          Information Technology graduate at the Philippine's first Polytechnic
+          University.
         </p>
         {file?.map((file) => (
           <a
