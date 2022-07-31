@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./Projects.scss";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
 import { getProjects } from "../../configs/useContentful";
+import "./Projects.scss";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -12,7 +12,6 @@ const Projects = () => {
   return (
     <>
       <motion.div
-        exit={{ opacity: 0 }}
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1 }}
       >
@@ -32,7 +31,6 @@ const Projects = () => {
                   <li key={`${tech}-technology`}>{tech}</li>
                 ))}
               </ul>
-
               <div className="controls">
                 <a href={project.projectLink} className="project__view-btn">
                   View

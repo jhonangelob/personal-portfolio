@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
-import AppWrap from "../../wrapper/AppWrap";
-import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import AppWrap from "../../wrapper/AppWrap";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -95,8 +95,9 @@ const Contact = () => {
         </div>
         <motion.div
           exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
           whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 0.5, delay: 1 }}
+          transition={{ duration: 1 }}
           className="app__contact-address"
         >
           <h4>Stay Connected</h4>

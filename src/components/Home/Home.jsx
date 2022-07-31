@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./Home.scss";
-import AppWrap from "../../wrapper/AppWrap";
 import { motion } from "framer-motion";
 import { getResume } from "../../configs/useContentful";
+import AppWrap from "../../wrapper/AppWrap";
+import "./Home.scss";
 
 const Home = () => {
   const [file, setFile] = useState([]);

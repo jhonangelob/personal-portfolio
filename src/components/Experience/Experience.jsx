@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AppWrap from "../../wrapper/AppWrap";
 import { motion, AnimatePresence } from "framer-motion";
+import AppWrap from "../../wrapper/AppWrap";
 import "./Experience.scss";
 
 const Experience = () => {
@@ -10,9 +10,8 @@ const Experience = () => {
     <>
       <div className="cont">
         <motion.h1
-          exit={{ opacity: 0 }}
           whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
         >
           My web development{" "}
           <span className="tech-btn" onClick={() => setActive("tech")}>
@@ -28,9 +27,8 @@ const Experience = () => {
           {active === "tech" ? (
             <motion.div
               key={"tech"}
-              initial={{ opacity: 0 }}
               whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1 }}
               className="tech_cont"
             >
               <p>
