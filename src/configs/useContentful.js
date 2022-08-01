@@ -23,11 +23,9 @@ export const getProjects = async () => {
     const entries = await client.getEntries({
       content_type: "projects",
       select: "fields",
-      order: "fields.order",
     });
     const sanitizedEntries = entries.items.map((item) => {
-      const image = item.fields.projectImage.fields;
-      return { ...item.fields, image };
+      return { ...item.fields };
     });
     return sanitizedEntries;
   } catch (err) {
