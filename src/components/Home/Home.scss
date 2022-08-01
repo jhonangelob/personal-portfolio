@@ -39,9 +39,12 @@
   }
   .download__link {
     color: var(--accent-color);
+    background-color: var(--white-color);
+    border: none;
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 900px) {

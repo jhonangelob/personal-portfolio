@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from "react";
+import Modal from "./Modal/Modal";
 import { motion } from "framer-motion";
 import { getResume } from "../../configs/useContentful";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Home.scss";
 
 const Home = () => {
+  const [openModal, setOpenModal] = useState(false);
   const [file, setFile] = useState([]);
+  console.log(file);
+
   useEffect(() => {
     getResume().then((response) => response && setFile(response));
   }, []);
 
   return (
     <>
+      <Modal
+        open={openModal}
+        setFile={setFile}
+        file={file}
+        closeModal={() => setOpenModal(false)}
+      />
       <motion.div
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
@@ -19,21 +29,22 @@ const Home = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <h1 className="app__hero-name">Jhon Angelo</h1>
-        <h3 className="app__hero-title">web developer</h3>
+        <h3 className="app__hero-title">Web Developer</h3>
         <p className="app__hero-desc">
-          My name is Jhon Angelo Bustarde, a Bachelor of Science in Information
-          Technology graduate at the Philippine's first Polytechnic University.
+          A Bachelor of Science in Information Technology graduate at the
+          Philippine's first Polytechnic University.
         </p>
         {file?.map((file) => (
-          <a
-            href={file.download.file.url}
-            target="_blank"
-            rel="noreferrer"
+          <button
+            onClick={() => setOpenModal(true)}
+            // href={file.download.file.url}
+            // target="_blank"
+            // rel="noreferrer"
             className="download__link"
             key={`key-${file.index}`}
           >
-            <span>Download CV</span>
-          </a>
+            <span>Know More</span>
+          </button>
         ))}
       </motion.div>
     </>
