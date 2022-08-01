@@ -17,7 +17,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: [0, 1] }}
           >
-            Front-end
+            Front-End
           </motion.span>{" "}
           Web Development and{" "}
           <motion.span

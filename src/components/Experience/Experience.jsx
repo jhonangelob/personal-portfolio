@@ -13,13 +13,13 @@ const Experience = () => {
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
         >
-          My web development{" "}
+          My Web Development{" "}
           <span className="tech-btn" onClick={() => setActive("tech")}>
-            technologies
+            Technologies
           </span>{" "}
           and{" "}
           <span className="exp-btn" onClick={() => setActive("exp")}>
-            experience
+            Experience
           </span>
           .{" "}
         </motion.h1>
@@ -32,20 +32,18 @@ const Experience = () => {
               className="tech_cont"
             >
               <p>
-                I specialize in Web Development using <span>React</span>,{" "}
-                <span>JavaScript</span>, and <span>Sass</span> for the front-end
-                part. And <span>node.js</span>, firestore <span>Firebase</span>{" "}
-                for the backend part and database.
+                I specialize in Front-End Web Development with{" "}
+                <span>React</span>, <span>JavaScript</span>,{" "}
+                <span>Bootstrap</span> , and <span>Sass</span> . As well as{" "}
+                <span>node.js</span> and <span>Firebase</span> for the backend
+                and database.
+              </p>
+              <p>Among other technologies that I use are:</p>
+              <p>
+                <span>Git</span> for version control
               </p>
               <p>
-                I also have some experience developing website using{" "}
-                <span>PHP</span>, <span>MySQL</span>, and <span>Bootstrap</span>
-                .
-              </p>
-              <p>For the version control,</p>
-              <p>
-                what I use is <span>Git</span> And for the UI/UX Designing. My
-                preffered tool is <span>Figma</span>.
+                <span>Figma</span> for UI/UX Design
               </p>
             </motion.div>
           ) : (
