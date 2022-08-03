@@ -40,7 +40,7 @@ const Experience = () => {
               <p>
                 I specialize in Front-End Web Development with{" "}
                 <span>React</span>, <span>JavaScript</span>,{" "}
-                <span>Bootstrap</span>, and <span>Sass</span> . As well as{" "}
+                <span>Bootstrap</span>, and <span>Sass</span>. As well as{" "}
                 <span>node.js</span> and <span>Firebase</span> for the backend
                 and database.
               </p>
