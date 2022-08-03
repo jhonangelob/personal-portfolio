@@ -23,12 +23,15 @@
     .exp-btn {
       color: var(--gray-color);
       cursor: pointer;
-      text-decoration: underline;
 
       &:hover {
         color: var(--black-color);
         transition: all 0.1s;
       }
+    }
+
+    .active {
+      color: var(--accent-color);
     }
 
     span {

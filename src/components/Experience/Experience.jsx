@@ -14,11 +14,17 @@ const Experience = () => {
           transition={{ duration: 1 }}
         >
           My Web Development{" "}
-          <span className="tech-btn" onClick={() => setActive("tech")}>
+          <span
+            className={`tech-btn ${active === "tech" ? "active" : ""}`}
+            onClick={() => setActive("tech")}
+          >
             Technologies
           </span>{" "}
           and{" "}
-          <span className="exp-btn" onClick={() => setActive("exp")}>
+          <span
+            className={`exp-btn ${active === "exp" ? "active" : ""}`}
+            onClick={() => setActive("exp")}
+          >
             Experience
           </span>
           .{" "}
@@ -34,7 +40,7 @@ const Experience = () => {
               <p>
                 I specialize in Front-End Web Development with{" "}
                 <span>React</span>, <span>JavaScript</span>,{" "}
-                <span>Bootstrap</span> , and <span>Sass</span> . As well as{" "}
+                <span>Bootstrap</span>, and <span>Sass</span> . As well as{" "}
                 <span>node.js</span> and <span>Firebase</span> for the backend
                 and database.
               </p>
