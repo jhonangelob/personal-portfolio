@@ -4,12 +4,12 @@ Hello and welcome to the source code for my personal portfolio website. This rep
 
 Quick rundown of the technologies being used:
 
-"_" React Js
-"_" Sass
-"_" Contentful
-"_" Framer Motion
-"_" React-icons
-"_" EmailJs
+- React Js
+- Sass
+- Contentful
+- Framer Motion
+- React-icons
+- EmailJs
 
 ## More information
 
