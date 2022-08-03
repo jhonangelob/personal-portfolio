@@ -49,12 +49,14 @@
         font-size: 0.8rem;
         margin-bottom: 0.5rem;
         list-style: none;
+        flex-wrap: wrap;
 
         li {
           color: var(--secondary-color);
           font-weight: 300;
           margin-right: 0.5rem;
           text-transform: uppercase;
+          flex-wrap: wrap;
         }
       }
 
