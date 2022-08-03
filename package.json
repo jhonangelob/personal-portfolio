@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jhonangelob.github.io/portfolio-v2",
-  "name": "portfolio-v2",
+  "homepage": "https://jhonangelob.github.io/",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
