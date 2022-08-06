@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 8rem;
+  padding: 4em 8em;
 
   h1 {
     text-align: center;
@@ -14,6 +14,7 @@
 
     @media screen and (max-width: 900px) {
       font-size: 3rem;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -21,6 +22,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: min(100%, 964px);
+    margin-inline: auto;
     color: var(--secondary-color);
 
     .app__projects-card {
