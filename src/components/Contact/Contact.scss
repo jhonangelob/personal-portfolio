@@ -16,7 +16,7 @@
   }
   .app__contact-cont {
     display: flex;
-    width: min(100%, 964px);
+    width: min(100%, 768px);
     flex-direction: row;
     margin-inline: auto;
 
@@ -86,7 +86,7 @@
     .app__contact-address {
       margin: 5rem 2rem;
       flex-direction: row;
-      flex-basis: 100%;
+      flex-basis: 50%;
 
       h4 {
         margin-bottom: 1rem;
