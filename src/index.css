@@ -22,3 +22,23 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
