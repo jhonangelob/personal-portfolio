@@ -9,6 +9,7 @@ import {
   Navbar,
   Projects,
 } from "./components";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           <Projects />
           <Experience />
           <Contact />
+          <Footer />
         </>
       )}
     </div>
