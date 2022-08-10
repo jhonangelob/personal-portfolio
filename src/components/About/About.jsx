@@ -6,7 +6,7 @@ import "./About.scss";
 const About = () => {
   return (
     <>
-      <div>
+      <div className="app__about-text">
         <motion.h1
           className="about__text"
           whileInView={{ opacity: [1, 1] }}
