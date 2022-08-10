@@ -43,27 +43,19 @@
       font-weight: 500;
     }
 
-    .tech_cont {
-      width: calc(100% - 30%);
-
-      @media screen and (max-width: 900px) {
-        width: 100%;
-        font-size: 0.8rem;
-      }
-    }
-
+    .tech_cont,
     .exp-cont {
       width: calc(100% - 30%);
 
       .exp-title {
         color: var(--white-color);
       }
-
       @media screen and (max-width: 900px) {
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
     }
+
     @media screen and (max-width: 900px) {
       width: 100%;
     }
