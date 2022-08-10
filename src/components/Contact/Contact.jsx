@@ -102,7 +102,7 @@ const Contact = () => {
         >
           <h4>Stay Connected</h4>
           <p className="location">Calamba, Laguna</p>
-          <p>bustarde.aj@gmail.com</p>
+          <p className="email">bustarde.aj@gmail.com</p>
           <div className="app__contact-icons">
             <a href="https://github.com/jhonangeloB">
               <FaGithub />
