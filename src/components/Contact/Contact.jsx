@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Contact.scss";
 
@@ -108,10 +108,10 @@ const Contact = () => {
               <FaGithub />
             </a>
             <a href="https://www.linkedin.com/in/jhonangelob/">
-              <FaLinkedin />
+              <FaLinkedinIn />
             </a>
             <a href="https://www.facebook.com/sqmbi">
-              <FaFacebook />
+              <FaFacebookF />
             </a>
           </div>
         </motion.div>
