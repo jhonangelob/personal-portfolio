@@ -8,14 +8,15 @@
   .app__loader-logo {
     margin: 4rem;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
     padding: 0.5rem;
 
     animation: 2s infinite border;
 
     @media screen and (max-width: 900px) {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 700;
     }
   }
 }
