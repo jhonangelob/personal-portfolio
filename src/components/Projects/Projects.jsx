@@ -19,8 +19,11 @@ const Projects = () => {
         <div className="app__projects-container">
           {projects?.map((project) => (
             <motion.div
+              whileHover={{
+                border: "1px solid #303030",
+              }}
               whileInView={{ opacity: [0, 1], y: [40, 0] }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.5 }}
               className="app__projects-card"
               key={`${project.name}-card`}
             >
