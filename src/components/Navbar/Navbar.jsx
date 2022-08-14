@@ -42,7 +42,7 @@ const Navbar = () => {
                 (item) => (
                   <li key={`link-${item}`} className={`link-${item}`}>
                     <a href={`#${item}`} onClick={() => setToggle(false)}>
-                      {item}
+                      <span>{item}</span>
                     </a>
                   </li>
                 )
