@@ -27,7 +27,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={colorChange ? "app__navbar dark" : "app__navbar light"}
     >
-      <div className="app__navbar-logo">jhn</div>
+      <span className="app__navbar-logo">jhn</span>
       <div className="app__navbar-menu">
         {!toggle ? (
           <HiMenu onClick={() => setToggle(true)} />
