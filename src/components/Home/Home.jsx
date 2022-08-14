@@ -8,7 +8,6 @@ import "./Home.scss";
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
   const [file, setFile] = useState([]);
-  console.log(file);
 
   useEffect(() => {
     getResume().then((response) => response && setFile(response));

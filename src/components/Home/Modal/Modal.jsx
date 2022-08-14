@@ -5,7 +5,6 @@ import "./Modal.scss";
 
 const Modal = ({ ...props }) => {
   if (!props.open) return null;
-  console.log(props.file);
   return (
     <div className="app__modal-overlay" onClick={props.closeModal}>
       {props.file?.map((download) => (
