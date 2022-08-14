@@ -28,6 +28,10 @@
         color: var(--black-color);
         transition: all 0.1s;
       }
+
+      &:active {
+        color: var(--accent-color);
+      }
     }
 
     .active {

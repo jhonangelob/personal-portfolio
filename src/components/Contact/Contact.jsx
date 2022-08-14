@@ -53,7 +53,9 @@ const Contact = () => {
               Question?
             </motion.span>
           </h2>
-          <h3>Just write a message</h3>
+          <h3>
+            Leave a <span>message</span>
+          </h3>
           <form onSubmit={handleSubmit} ref={form}>
             <motion.input
               whileInView={{ opacity: [0, 1] }}
