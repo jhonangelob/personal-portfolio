@@ -37,9 +37,6 @@ const Home = () => {
         {file?.map((file) => (
           <button
             onClick={() => setOpenModal(true)}
-            // href={file.download.file.url}
-            // target="_blank"
-            // rel="noreferrer"
             className="download__link"
             key={`key-${file.index}`}
           >
