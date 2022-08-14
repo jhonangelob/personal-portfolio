@@ -8,6 +8,7 @@ import {
   Home,
   Navbar,
   Projects,
+  Particles,
 } from "./components";
 import Footer from "./components/Footer/Footer";
 
@@ -29,6 +30,7 @@ function App() {
         </>
       ) : (
         <>
+          <Particles />
           <Navbar />
           <Home />
           <About />

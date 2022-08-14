@@ -5,5 +5,15 @@ import Contact from "./Contact/Contact";
 import Experience from "./Experience/Experience";
 import Projects from "./Projects/Projects";
 import Loader from "./Loader/Loader";
+import Particles from "./Particles/Particles";
 
-export { Navbar, About, Home, Contact, Experience, Projects, Loader };
+export {
+  Navbar,
+  About,
+  Home,
+  Contact,
+  Experience,
+  Projects,
+  Loader,
+  Particles,
+};
