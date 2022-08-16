@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import AppWrap from "../../wrapper/AppWrap";
+import React, { useEffect, useState } from "react";
 import { getProjects } from "../../configs/useContentful";
+import AppWrap from "../../wrapper/AppWrap";
 import "./Projects.scss";
 
 const Projects = () => {
