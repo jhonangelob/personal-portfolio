@@ -14,6 +14,7 @@
       font-size: 3em;
     }
   }
+
   .app__hero-title {
     color: var(--primary-color);
     font-weight: 600;
@@ -25,41 +26,32 @@
       margin-bottom: 0.5rem;
     }
   }
+
   .app__hero-desc {
     color: var(--secondary-color);
     font-weight: 400;
 
     width: min(50%, 600px);
     font-size: 1rem;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 
     @media screen and (max-width: 900px) {
       font-size: 0.8rem;
       width: 100%;
     }
   }
-  .download__link {
-    font-family: var(--font-family);
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: solid 2px var(--white-color);
-    font-weight: 500;
-    font-size: 1em;
-    border-radius: 4px;
-    padding: 0.5em 1em;
-    cursor: pointer;
 
-    &:hover {
-      color: var(--accent-color);
-      background-color: var(--white-color);
-      border: solid 2px var(--accent-color);
-      transition: all 0.5s ease;
-    }
+  a {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
 
-    &:active {
-      color: var(--accent-color);
-      background-color: var(--white-color);
-      border: solid 2px var(--accent-color);
+    svg {
+      width: 25px;
+      height: 25px;
     }
 
     @media screen and (max-width: 900px) {

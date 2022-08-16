@@ -1,11 +1,17 @@
-import React, { useState, useRef } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { getResume } from "../../configs/useContentful";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Contact.scss";
 
 const Contact = () => {
+  const [file, setFile] = useState([]);
+
+  useEffect(() => {
+    getResume().then((response) => response && setFile(response));
+  }, []);
   const [sending, setSending] = useState(false);
   const form = useRef();
   const handleSubmit = (e) => {
@@ -116,6 +122,16 @@ const Contact = () => {
               <FaFacebookF />
             </a>
           </div>
+          {file?.map((file, index) => (
+            <div className="app__contact-links">
+              <p>
+                Download my{" "}
+                <a href={file.download.file.url} download>
+                  Resume
+                </a>
+              </p>
+            </div>
+          ))}
         </motion.div>
       </div>
     </>

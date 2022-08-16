@@ -1,26 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Modal from "./Modal/Modal";
 import { motion } from "framer-motion";
-import { getResume } from "../../configs/useContentful";
+import React from "react";
+import { HiArrowSmRight } from "react-icons/hi";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Home.scss";
 
 const Home = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [file, setFile] = useState([]);
-
-  useEffect(() => {
-    getResume().then((response) => response && setFile(response));
-  }, []);
-
   return (
     <>
-      <Modal
-        open={openModal}
-        setFile={setFile}
-        file={file}
-        closeModal={() => setOpenModal(false)}
-      />
       <motion.div
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
@@ -33,15 +19,9 @@ const Home = () => {
           A Bachelor of Science in Information Technology graduate at the
           Philippine's first Polytechnic University.
         </p>
-        {file?.map((file) => (
-          <button
-            onClick={() => setOpenModal(true)}
-            className="download__link"
-            key={`key-${file.index}`}
-          >
-            <span>Know More</span>
-          </button>
-        ))}
+        <a href="#contact">
+          Let's Talk <HiArrowSmRight />
+        </a>
       </motion.div>
     </>
   );
