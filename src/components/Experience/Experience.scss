@@ -2,71 +2,84 @@
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
-  padding: 8em;
+  padding: 8rem 8rem 2rem 8rem;
 
   color: var(--secondary-color);
-  flex: 1;
 
-  .cont {
-    width: calc(100% - 30%);
+  span {
+    color: var(--gray-color);
+  }
 
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 1.5rem;
+  h1 {
+    font-size: 4em;
+    margin-bottom: 1.5rem;
+    width: min(100%, 768px);
 
-      @media screen and (max-width: 900px) {
-        font-size: 3rem;
-      }
+    @media screen and (max-width: 900px) {
+      font-size: 3em;
     }
+  }
 
-    .tech-btn,
-    .exp-btn {
-      color: var(--gray-color);
-      cursor: pointer;
+  .app__experience-cont {
+    display: flex;
+    width: min(100%, 768px);
+    justify-content: space-between;
 
-      &:hover {
-        color: var(--black-color);
-        transition: all 0.1s;
-      }
-
-      &:active {
-        color: var(--accent-color);
-      }
-    }
-
-    .active {
+    h4 {
+      font-weight: 500;
       color: var(--accent-color);
     }
-
-    span {
-      color: var(--white-color);
-    }
-
     p {
       margin: 0.5rem 0rem;
-      font-weight: 500;
+      font-weight: 400;
     }
 
-    .tech_cont,
-    .exp-cont {
-      width: calc(100% - 30%);
+    .tech_cont {
+      .app__experience-card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5rem 0rem;
+        gap: 2rem;
+        margin-bottom: 2rem;
 
+        img {
+          width: 40px;
+          height: 40px;
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          cursor: pointer;
+
+          &:hover {
+            filter: none;
+            -webkit-filter: grayscale(0%);
+            scale: 1.2;
+            transition: all ease 0.3s;
+          }
+
+          @media screen and (max-width: 900px) {
+            width: 30px;
+            height: 30px;
+            filter: none;
+            -webkit-filter: grayscale(0%);
+          }
+        }
+      }
+    }
+
+    .exp_cont {
       .exp-title {
         color: var(--white-color);
-      }
-      @media screen and (max-width: 900px) {
-        width: 100%;
-        font-size: 0.9rem;
+        font-weight: 600;
       }
     }
 
     @media screen and (max-width: 900px) {
-      width: 100%;
+      display: block;
     }
   }
 
   @media screen and (max-width: 900px) {
-    padding: 1rem 2rem;
-    justify-content: center;
+    padding: 4rem 2rem;
   }
 }
