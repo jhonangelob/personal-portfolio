@@ -1,10 +1,12 @@
-import { motion } from "framer-motion";
+import { motion, useCycle } from "framer-motion";
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import "./Navbar.scss";
 
+const links = ["home", "about", "projects", "experience", "contact"];
+
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [open, cycleOpen] = useCycle(true, false);
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
     if (
@@ -29,24 +31,22 @@ const Navbar = () => {
     >
       <span className="app__navbar-logo">jhn</span>
       <div className="app__navbar-menu">
-        {!toggle ? (
-          <HiMenu onClick={() => setToggle(true)} />
+        {open ? (
+          <HiMenu onClick={cycleOpen} />
         ) : (
           <motion.div className="app__navbar-expanded">
-            <HiX onClick={() => setToggle(false)} />
+            <HiX onClick={cycleOpen} />
             <motion.ul
               whileInView={{ x: [100, 0] }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              {["home", "about", "projects", "experience", "contact"].map(
-                (item) => (
-                  <li key={`link-${item}`} className={`link-${item}`}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
-                      <span>{item}</span>
-                    </a>
-                  </li>
-                )
-              )}
+              {links.map((link) => (
+                <li key={`${link}-link`} className={`${link}-link`}>
+                  <a href={`#${link}`} onClick={cycleOpen}>
+                    <span>{link}</span>
+                  </a>
+                </li>
+              ))}
             </motion.ul>
           </motion.div>
         )}
