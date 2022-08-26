@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.47334517.css",
-    "main.js": "/static/js/main.d6e9e586.js",
+    "main.js": "/static/js/main.452ddd0f.js",
     "static/media/sass.svg": "/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
     "static/media/reactjs.svg": "/static/media/reactjs.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/nodejs.svg": "/static/media/nodejs.615ffbea9529ca7047ed8a912bfd94b2.svg",
@@ -16,10 +16,10 @@
     "static/media/css.svg": "/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html.svg": "/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "main.47334517.css.map": "/static/css/main.47334517.css.map",
-    "main.d6e9e586.js.map": "/static/js/main.d6e9e586.js.map"
+    "main.452ddd0f.js.map": "/static/js/main.452ddd0f.js.map"
   },
   "entrypoints": [
     "static/css/main.47334517.css",
-    "static/js/main.d6e9e586.js"
+    "static/js/main.452ddd0f.js"
   ]
 }
