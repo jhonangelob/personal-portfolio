@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { getResume } from "../../configs/useContentful";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Contact.scss";
@@ -119,7 +119,7 @@ const Contact = () => {
               <FaLinkedinIn />
             </a>
             <a href="https://www.facebook.com/sqmbi">
-              <FaFacebookF />
+              <FaFacebook />
             </a>
           </div>
           {file?.map((file, index) => (

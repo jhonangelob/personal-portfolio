@@ -14,7 +14,7 @@ const Home = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <h1 className="app__hero-name">Jhon Angelo</h1>
-        <h3 className="app__hero-title">Web Developer</h3>
+        <h3 className="app__hero-title">WEB DEVELOPER</h3>
         <p className="app__hero-desc">
           A Bachelor of Science in Information Technology graduate at the
           Philippine's first Polytechnic University.

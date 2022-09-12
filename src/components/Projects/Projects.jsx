@@ -21,6 +21,7 @@ const Projects = () => {
             <motion.div
               whileHover={{
                 border: "1px solid #303030",
+                transition: 1,
               }}
               whileInView={{ opacity: [0, 1], y: [40, 0] }}
               transition={{ duration: 0.5 }}
